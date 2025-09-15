@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckuk8plu7qtmc"]
+
+[ext_resource type="Script" uid="uid://dpos08nepixui" path="res://TestWindow.cs" id="1_2ngnr"]
+
+[node name="testWindow" type="Window"]
+transparent_bg = true
+always_on_top = true
+transparent = true
+mouse_passthrough = true
+sharp_corners = true
+script = ExtResource("1_2ngnr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]
